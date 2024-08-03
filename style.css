@@ -1,0 +1,45 @@
+body {  
+    font-family: Arial, sans-serif;  
+    background: linear-gradient(135deg, #d1e8fd 0%, #f1f9ff 100%);  
+    animation: backgroundAnimation 10s linear infinite;  
+}  
+
+@keyframes backgroundAnimation {  
+    0% { background-color: #d1e8fd; }  
+    50% { background-color: #f1f9ff; }  
+    100% { background-color: #d1e8fd; }  
+}  
+
+.shoe-item {  
+    background: rgba(255, 255, 255, 0.9);  
+    border-radius: 10px;  
+    padding: 20px;  
+    margin: 15px;  
+    transition: transform 0.3s, box-shadow 0.3s;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+}  
+
+.shoe-item:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);  
+}  
+
+.shoe-image {  
+    max-width: 100%;  
+    height: auto;  
+    border-radius: 10px;  
+    transition: transform 0.5s;  
+}  
+
+.shoe-image:hover {  
+    transform: scale(1.05);  
+}  
+
+.discounted-price {  
+    color: red;  
+    font-weight: bold;  
+}  
+
+.about-section {  
+    margin-top: 20px;  
+}
